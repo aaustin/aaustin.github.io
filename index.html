@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			var uri = "optio://open?link_click_id=1234";
+			var appstore = "https://play.google.com/store/apps/details?id=com.tantumsoft.optio";
+			var intent = "intent://open?link_click_id=87209258378070300#Intent;scheme=optio;package=com.tantumsoft.optio;end";
+
+			
+			window.onload = function() {
+				//document.getElementById('x').src = uri;
+			
+				window.location = uri;
+				//setTimeout(function() {
+					//var currLoc = window.location;
+				
+					//document.getElementById('z').click();
+					// alert("launching app");
+					setTimeout(function() {
+						window.location = appstore;
+					//document.getElementById('x').src = appstore;
+					}, 250);
+				//}, 150);
+
+				document.getElementById('a').onclick = function() {
+					document.getElementById('x').src = uri;
+					return false;
+				};
+				document.getElementById('b').onclick = function() {
+					window.open(uri, "_blank");
+					return false;
+				};
+				document.getElementById('c').onclick = function() {
+					window.open(uri, "_self");
+					return false;
+				};
+				document.getElementById('d').onclick = function() {
+					document.getElementById('y').src = uri;
+					return false;
+				};
+				document.getElementById('e').onclick = function() {
+					window.open(uri);
+					return false;
+				};
+				document.getElementById('f').onclick = function() {
+					document.getElementById('iframe').src = "urischeme://open";
+					setTimeout(function() {
+						document.getElementById('iframe').src = "https://itunes.apple.com/app/id1020334850";
+					}, 250);
+					
+				/*var a = "open?link_click_id=109714037020821818";
+				var b = "branchtest://";
+				var d = "market://details?id=io.branch.branchandroiddemo";
+
+				setTimeout(function() {
+					window.location = b + a;
+				}, 650);
+				setTimeout(function() {
+					window.location = d;
+				}, 500);
+					return false;*/
+				};
+				document.getElementById('g').onclick = function() {
+					var a = "open?link_click_id=109714037020821818";
+					var b = "branchtest://";
+					var d = appstore;//"itms://details?id=io.branch.branchandroiddemo";
+					//var d = "https://play.google.com/store/apps/details?id=com.snapdeal.main";
+					
+					
+					setTimeout(function() {
+					setTimeout(function() {
+						window.location = b + a;
+					}, 250);
+					window.location = d;
+					}, 250);
+					return false;
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<h1>
+		<a id="z" href="optio://open?link_click_id=1234">Strategy 1</a><br />
+		<a href="intent://open?link_click_id=87209258378070300#Intent;scheme=optio;package=com.tantumsoft.optio;end" target="_blank">Strategy 2</a><br />
+		<a href="#" id="a">Strategy 3</a><br />
+		<a href="#" id="b">Strategy 4</a><br />
+		<a href="#" id="c">Strategy 5</a><br />
+		<a href="#" id="d">Strategy 6</a><br />
+		<a href="#" id="e">Strategy 7</a><br />
+		<a href="#" id="f">Strategy 10</a><br />
+		<a href="#" id="g">Strategy 11</a><br />
+		</h1>
+		<iframe id="x"></iframe>
+		<img id="y" />
+	</body>
+</html>
