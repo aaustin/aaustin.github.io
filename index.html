@@ -2,24 +2,24 @@
 <html>
 	<head>
 		<script type="text/javascript">
-			var uri = "optio://open?link_click_id=1234";
-			var appstore = "market://details?id=com.tantumsoft.optio";
+			var uri = "branchsters://open?link_click_id=1234";
+			var appstore = "https://itunes.apple.com/us/app/branch-monster-factory/id917737838";
 			var intent = "intent://open?link_click_id=87209258378070300#Intent;scheme=optio;package=com.tantumsoft.optio;end";
 
 			
 			window.onload = function() {
 				//document.getElementById('x').src = uri;
 			
-				// window.location = uri;
+				window.location = uri;
 				//setTimeout(function() {
 					//var currLoc = window.location;
 				
 					//document.getElementById('z').click();
 					// alert("launching app");
-					/*setTimeout(function() {
+					setTimeout(function() {
 						window.location = appstore;
 					//document.getElementById('x').src = appstore;
-					}, 250);*/
+					}, 250);
 				//}, 150);
 
 				document.getElementById('a').onclick = function() {
@@ -80,7 +80,7 @@
 	</head>
 	<body>
 		<h1>
-		<a id="z" href="optio://open?link_click_id=1234">Strategy 1</a><br />
+		<a id="z" href="branchsters://open?link_click_id=1234">Strategy 1</a><br />
 		<a href="intent://open?link_click_id=87209258378070300#Intent;scheme=optio;package=com.tantumsoft.optio;end" target="_blank">Strategy 2</a><br />
 		<a href="#" id="a">Strategy 3</a><br />
 		<a href="#" id="b">Strategy 4</a><br />
