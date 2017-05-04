@@ -4,7 +4,8 @@
 		<script type="text/javascript">
 			var uri = "branchsters://open?link_click_id=1234";
 			var appstore = "https://itunes.apple.com/us/app/branch-monster-factory/id917737838";
-			var intent = "intent://open?link_click_id=87209258378070300#Intent;scheme=optio;package=com.tantumsoft.optio;end";
+			var marketstore = "market://details?id=io.velo.app";
+			var intent = "intent://open?link_click_id=87209258378070300#Intent;scheme=veloapp;package=io.velo.app;end";
 
 			
 			window.onload = function() {
@@ -17,7 +18,7 @@
 					//document.getElementById('z').click();
 					// alert("launching app");
 					setTimeout(function() {
-						window.location = appstore;
+						window.location = marketstore;
 					//document.getElementById('x').src = appstore;
 					}, 250);
 				//}, 150);
@@ -43,9 +44,9 @@
 					return false;
 				};
 				document.getElementById('f').onclick = function() {
-					document.getElementById('iframe').src = "urischeme://open";
+					document.getElementById('iframe').src = uri;
 					setTimeout(function() {
-						document.getElementById('iframe').src = "https://itunes.apple.com/app/id1020334850";
+						document.getElementById('iframe').src = marketstore;
 					}, 250);
 					
 				/*var a = "open?link_click_id=109714037020821818";
@@ -63,7 +64,7 @@
 				document.getElementById('g').onclick = function() {
 					var a = "open?link_click_id=109714037020821818";
 					var b = "branchtest://";
-					var d = appstore;//"itms://details?id=io.branch.branchandroiddemo";
+					var d = marketstore;//"itms://details?id=io.branch.branchandroiddemo";
 					//var d = "https://play.google.com/store/apps/details?id=com.snapdeal.main";
 					
 					
@@ -81,7 +82,7 @@
 	<body>
 		<h1>
 		<a id="z" href="branchsters://open?link_click_id=1234">Strategy 1</a><br />
-		<a href="intent://open?link_click_id=87209258378070300#Intent;scheme=optio;package=com.tantumsoft.optio;end" target="_blank">Strategy 2</a><br />
+		<a href="intent://open?link_click_id=87209258378070300#Intent;scheme=veloapp;package=io.velo.app;end" target="_blank">Strategy 2</a><br />
 		<a href="#" id="a">Strategy 3</a><br />
 		<a href="#" id="b">Strategy 4</a><br />
 		<a href="#" id="c">Strategy 5</a><br />
