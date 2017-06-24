@@ -2,23 +2,23 @@
 <html>
 	<head>
 		<script type="text/javascript">
-			var uri = "branchsters://open?link_click_id=1234";
+			var uri = "goodoc://open?link_click_id=1234";
 			var appstore = "https://itunes.apple.com/us/app/branch-monster-factory/id917737838";
 			var marketstore = "market://details?id=io.velo.app";
 			var intent = "intent://open?link_click_id=87209258378070300#Intent;scheme=veloapp;package=io.velo.app;end";
-
+			var url = "http://www.goodoc.co.kr/events/6674";
 			
 			window.onload = function() {
 				//document.getElementById('x').src = uri;
 			
-				// window.location = uri;
+				window.location = uri;
 				//setTimeout(function() {
 					//var currLoc = window.location;
 				
 					//document.getElementById('z').click();
 					// alert("launching app");
 					setTimeout(function() {
-						//window.location = marketstore;
+					window.location = url;
 					//document.getElementById('x').src = appstore;
 					}, 250);
 				//}, 150);
