@@ -15,7 +15,7 @@
 				//window.location = uri;
 				setTimeout(function() {
 					//var currLoc = window.location;
-					window.open(appstore);
+					window.open(url, "_self");
 					//document.getElementById('z').click();
 					// alert("launching app");
 				//setTimeout(function() {
@@ -25,23 +25,23 @@
 				//}, 150);
 
 				document.getElementById('a').onclick = function() {
-					document.getElementById('x').src = appstore;
+					document.getElementById('x').src = url;
 					return false;
 				};
 				document.getElementById('b').onclick = function() {
-					window.open(appstore, "_blank");
+					window.open(url, "_blank");
 					return false;
 				};
 				document.getElementById('c').onclick = function() {
-					window.open(appstore, "_self");
+					window.open(url, "_self");
 					return false;
 				};
 				document.getElementById('d').onclick = function() {
-					document.getElementById('y').src = appstore;
+					document.getElementById('y').src = url;
 					return false;
 				};
 				document.getElementById('e').onclick = function() {
-					window.open(appstore);
+					window.open(url);
 					return false;
 				};
 				document.getElementById('f').onclick = function() {
