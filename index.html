@@ -12,7 +12,7 @@
 				//document.getElementById('x').src = uri;
 			
 
-				//window.location = uri;
+				window.location = appstore;
 				/*setTimeout(function() {
 					//var currLoc = window.location;
 					window.open(url, "_self");
@@ -25,11 +25,12 @@
 				//}, 150);
 
 				document.getElementById('a').onclick = function() {
-					document.getElementById('x').src = url;
+					//document.getElementById('x').src = url;
+					window.open(appstore, "_self");
 					return false;
 				};
 				document.getElementById('b').onclick = function() {
-					window.open(url, "_blank");
+					window.open("itms-apps://itunes.apple.com/app/id917737838", "_self");
 					return false;
 				};
 				document.getElementById('c').onclick = function() {
@@ -78,10 +79,10 @@
 	<body>
 		<h1>
 		<a id="z" href="branchsters://open?link_click_id=1234">Direct branchster://</a><br />
-		<a href="https://itunes.apple.com/us/app/branch-monster-factory/id917737838">Direct market://</a><br />
-		<a href="#" id="a">iframe src</a><br />
-		<a href="#" id="b">window open blank</a><br />
-		<a href="#" id="c">window open self</a><br />
+		<a href="https://itunes.apple.com/us/app/branch-monster-factory/id917737838">Direct App Store</a><br />
+		<a href="#" id="a">window open self app store https</a><br />
+		<a href="#" id="b">window open self app store itms</a><br />
+		<a href="#" id="c">window open self universal link</a><br />
 		<a href="#" id="d">img src</a><br />
 		<a href="#" id="e">window open</a><br />
 		<a href="#" id="f">dynamic 1</a><br />
