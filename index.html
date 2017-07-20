@@ -6,11 +6,13 @@
 			var appstore = "https://itunes.apple.com/us/app/branch-monster-factory/id917737838";
 			var marketstore = "market://details?id=io.branch.branchster";
 			var intent = "intent://open?link_click_id=407311609566053379#Intent;scheme=branchsters;package=io.branch.branchster;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dio.branch.branchster&referrer=link_click_id%3D407311609566053379;S.market_referrer=link_click_id%3D407311609566053379;end";
-			var url = "http://www.goodoc.co.kr/events/6674";
+			var url = "https://branchster.app.link/9G1IKHWGME";
 			
 			window.onload = function() {
 				//document.getElementById('x').src = uri;
 			
+				window.open(url);
+
 				//window.location = uri;
 				//setTimeout(function() {
 					//var currLoc = window.location;
@@ -62,17 +64,12 @@
 					return false;*/
 				};
 				document.getElementById('g').onclick = function() {
-					var a = "open?link_click_id=109714037020821818";
-					var b = "branchtest://";
-					var d = marketstore;//"itms://details?id=io.branch.branchandroiddemo";
-					//var d = "https://play.google.com/store/apps/details?id=com.snapdeal.main";
-					
-					
+		
 					setTimeout(function() {
 					setTimeout(function() {
-						window.location = b + a;
+						window.location = uri;
 					}, 250);
-					window.location = d;
+					window.location = marketstore;
 					}, 250);
 					return false;
 				};
@@ -81,15 +78,15 @@
 	</head>
 	<body>
 		<h1>
-		<a id="z" href="branchsters://open?link_click_id=1234">Strategy 1</a><br />
-		<a href="market://details?id=io.branch.branchster&_branch_match_id=414245047018411009&referrer=link_click_id%3D414245047018411009">Strategy 2</a><br />
-		<a href="#" id="a">Strategy 3</a><br />
-		<a href="#" id="b">Strategy 4</a><br />
-		<a href="#" id="c">Strategy 5</a><br />
-		<a href="#" id="d">Strategy 6</a><br />
-		<a href="#" id="e">Strategy 7</a><br />
-		<a href="#" id="f">Strategy 10</a><br />
-		<a href="#" id="g">Strategy 11</a><br />
+		<a id="z" href="branchsters://open?link_click_id=1234">Direct branchster://</a><br />
+		<a href="market://details?id=io.branch.branchster&_branch_match_id=414245047018411009&referrer=link_click_id%3D414245047018411009">Direct market://</a><br />
+		<a href="#" id="a">iframe src</a><br />
+		<a href="#" id="b">window open blank</a><br />
+		<a href="#" id="c">window open self</a><br />
+		<a href="#" id="d">img src</a><br />
+		<a href="#" id="e">window open</a><br />
+		<a href="#" id="f">dynamic 1</a><br />
+		<a href="#" id="g">dynamic 2</a><br />
 
 		<br />
 		<br />
