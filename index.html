@@ -12,18 +12,19 @@
 				//document.getElementById('x').src = uri;
 			
 
-				window.location = uri;
+				//
 				//window.location = appstore;
 				setTimeout(function() {
 					//var currLoc = window.location;
-					window.location = appstore;
+					window.location = uri;	
 					//document.getElementById('z').click();
 					// alert("launching app");
-				//setTimeout(function() {
+				setTimeout(function() {
+					window.location = appstore;
 				//	document.getElementById('x').src = marketstore;
 					//document.getElementById('x').src = appstore;
 				}, 500);
-				//}, 150);
+				}, 150);
 
 				document.getElementById('a').onclick = function() {
 					//document.getElementById('x').src = url;
