@@ -2,6 +2,27 @@
 <html>
 	<head>
 		<script type="text/javascript">
+			(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="build.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+			branch.init('key_live_khrnIbo4f9d3nIShirL0umelyEgHY8P8');
+			// define the deepview structure
+			branch.deepview(
+			    {
+			      'channel': 'mobile_web',
+			      'feature': 'deepview',
+			      data : {
+			        '$deeplink_path': 'page/1234',
+			        'user_profile': '7890',
+			        'page_id': '1234',
+			        'custom_data': 1234
+			      }
+			    },
+			    {
+			      'open_app': true  // If true, Branch attempts to open your app immediately when the page loads. If false, users will need to press a button. Defaults to true
+			 });
+
+
+
+
 			var uri = "branchsters://open?link_click_id=1234";
 			var appstore = "https://itunes.apple.com/us/app/branch-monster-factory/id917737838";
 			var marketstore = "market://details?id=io.branch.branchster";
@@ -94,6 +115,12 @@
 		<a href="#" id="e">window open</a><br />
 		<a href="#" id="f">dynamic 1</a><br />
 		<a href="#" id="g">dynamic 2</a><br />
+
+		<br />
+		<br />
+		Deepview CTA
+		<br />
+		<a id="downloadapp" onclick="branch.deepviewCta();">Tap me to open</a><br />
 
 		<br />
 		<br />
