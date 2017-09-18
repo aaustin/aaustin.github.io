@@ -7,7 +7,7 @@
 			branch.init('key_live_khrnIbo4f9d3nIShirL0umelyEgHY8P8');
 
 			// define the deepview structure
-			/*branch.deepview(
+			branch.deepview(
 			    {
 			      'channel': 'mobile_web',
 			      'feature': 'deepview',
@@ -20,8 +20,8 @@
 			      }
 			    },
 			    {
-			      'open_app': true  // If true, Branch attempts to open your app immediately when the page loads. If false, users will need to press a button. Defaults to true
-			 });*/
+			      'open_app': false  // If true, Branch attempts to open your app immediately when the page loads. If false, users will need to press a button. Defaults to true
+			 });
 
 			var uri = "branchsters://open?link_click_id=1234";
 			var appstore = "https://itunes.apple.com/us/app/branch-monster-factory/id917737838";
@@ -31,10 +31,6 @@
 			var fallback_url = "https://branch.io";
 
 			window.onload = function() {
-
-				//setTimeout(function() {
-				window.top.location = uri;
-				//}, 500);
 
 				document.getElementById('a').onclick = function() {
 					window.open(uri, "_self");
