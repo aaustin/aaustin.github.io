@@ -23,11 +23,53 @@
 			      'open_app': true  // If true, Branch attempts to open your app immediately when the page loads. If false, users will need to press a button. Defaults to true
 			 });
 
+			var uri = "branchsters://open?link_click_id=1234";
+			var appstore = "https://itunes.apple.com/us/app/branch-monster-factory/id917737838";
+			var marketstore = "market://details?id=io.branch.branchster";
+			var intent = "intent://open?link_click_id=407311609566053379#Intent;scheme=branchsters;package=io.branch.branchster;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dio.branch.branchster&referrer=link_click_id%3D407311609566053379;S.market_referrer=link_click_id%3D407311609566053379;end";
+			var url = "https://branchster.app.link/9G1IKHWGME";
+			var fallback_url = "https://branch.io";
+
+			window.onload = function() {
+
+				document.getElementById('a').onclick = function() {
+					window.open(url, "_self");
+					return false;
+				};
+				document.getElementById('b').onclick = function() {
+					window.open(url, "_blank");
+					return false;
+				};
+				document.getElementById('c').onclick = function() {
+					window.open(url, "_parent");
+					return false;
+				};
+				document.getElementById('d').onclick = function() {
+					window.location = url;
+					return false;
+				};
+				document.getElementById('e').onclick = function() {
+					window.top.location = url;
+					return false;
+				};
+
 		</script>
 	</head>
 	<body>
 
 		<h1>
+		<a id="z" href="https://branchster.app.link/9G1IKHWGME">Direct BMF Link</a><br />
+		<a id="z" href="branchsters://open?link_click_id=1234">Direct branchster://</a><br />
+		<a href="https://itunes.apple.com/us/app/branch-monster-factory/id917737838">Direct App Store</a><br />
+		<a href="market://details?id=io.branch.branchster">Direct Play Store Market</a><br />
+		<a href="intent://open?link_click_id=407311609566053379#Intent;scheme=branchsters;package=io.branch.branchster;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dio.branch.branchster&referrer=link_click_id%3D407311609566053379;S.market_referrer=link_click_id%3D407311609566053379;end">Branch MF Intent With Fallback</a><br />
+		<a href="intent://open?link_click_id=407311609566053379#Intent;scheme=branchsters;package=io.branch.branchster;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dio.branch.branchster&referrer=link_click_id%3D407311609566053379;S.browser_fallback_url=https%3A%2F%2Fwww.airbnb.fr%2Frooms%2F15221932%3Feal_exp%3D1504994509%26eal_sig%3D2ba01c29e7c5d340cc8601c9ab3ee91d29edfc1630e955a5e1e891ac496af9ab%26eal_uid%3D77526412%26eluid%3D1%26euid%3D3626613a-78aa-13f0-9f0f-a65ebb4fb10d%26%25243p%3De_eml%26%2524deeplink_path%3Dairbnb%253A%252F%252Fd%252Flisting%253Fid%253D15221932%26%2524original_url%3Dhttps%253A%252F%252Fwww.airbnb.fr%252Frooms%252F15221932%253Feal_exp%253D1504994509%2526eal_sig%253D2ba01c29e7c5d340cc8601c9ab3ee91d29edfc1630e955a5e1e891ac496af9ab%2526eal_uid%253D77526412%2526eluid%253D1%2526euid%253D3626613a-78aa-13f0-9f0f-a65ebb4fb10d%26campaign%3Drookery%26_branch_match_id%3D417084184557122828;S.market_referrer=link_click_id%3D407311609566053379;end">Branch MF Intent No Fallback</a><br />
+		<a href="#" id="a">window open self</a><br />
+		<a href="#" id="b">window open blank</a><br />
+		<a href="#" id="c">window open parent</a><br />
+		<a href="#" id="d">window.location</a><br />
+		<a href="#" id="e">window.top.location</a><br />
+
 		<br />
 		<br />
 		Deepview CTA
