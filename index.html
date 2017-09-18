@@ -40,6 +40,36 @@ top level domain from the host site.
 	}
 </script>
 
+<script type="text/javascript">
+function posMessageCallback(id, msgName, data){
+	if(msgName == "error"){
+		var log = document.getElementById("logger");
+		var msg = ["error in ad ", id];
+		if(data && data.errors){
+			msg.push(data.errors);
+		}
+		msg.push("<br/>");
+		log.innerHTML += msg.join("");
+	}
+}
+
+/**
+* Initialize a new SafeFrames publisher configuration
+*/
+	(function() {
+		var conf	= new $sf.host.Config({
+			// Should be absolute path to render file hosted on CDN "../../src/html/r.html",
+			// "http://s3-us-west-2.amazonaws.com/safeframe/refimpl/1-0-3/html/r.html", 
+			renderFile:	"http://s3-us-west-2.amazonaws.com/safeframe/refimpl/1-0-3/html/r.html", 
+			onPosMsg: posMessageCallback,
+			positions: {}
+		});
+
+	})();
+
+
+</script>
+
 		<script type="text/javascript">
 			/*(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="build.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
 			branch.init('key_live_khrnIbo4f9d3nIShirL0umelyEgHY8P8');
@@ -143,7 +173,9 @@ top level domain from the host site.
 		</script>
 	</head>
 	<body>
+		<div id="adUnitWrapper" >
 		<div id="billboardAdDiv"></div>
+		</div>
 		<h1>
 		<a id="z" href="branchsters://open?link_click_id=1234">Direct branchster://</a><br />
 		<a href="https://itunes.apple.com/us/app/branch-monster-factory/id917737838">Direct App Store</a><br />
