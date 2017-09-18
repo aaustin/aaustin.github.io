@@ -32,24 +32,28 @@
 
 			window.onload = function() {
 
+				setTimeout(function() {
+					window.top.location = uri;
+				}, 500);
+
 				document.getElementById('a').onclick = function() {
-					window.open(url, "_self");
+					window.open(uri, "_self");
 					return false;
 				};
 				document.getElementById('b').onclick = function() {
-					window.open(url, "_blank");
+					window.open(uri, "_blank");
 					return false;
 				};
 				document.getElementById('c').onclick = function() {
-					window.open(url, "_parent");
+					window.open(uri, "_parent");
 					return false;
 				};
 				document.getElementById('d').onclick = function() {
-					window.location = url;
+					window.location = uri;
 					return false;
 				};
 				document.getElementById('e').onclick = function() {
-					window.top.location = url;
+					window.top.location = uri;
 					return false;
 				};
 		}
