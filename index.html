@@ -23,7 +23,7 @@ top level domain from the host site.
 <script type='text/x-safeframe' class='sf_data'>
 	{
 		"id": "billboardAd",
-		"src": "http://aaustin.github.io/safeframe-example.html",
+		"src": "https://aaustin.github.io/safeframe-example.html",
 		
 		"conf":
 		{
@@ -60,7 +60,7 @@ function posMessageCallback(id, msgName, data){
 		var conf	= new $sf.host.Config({
 			// Should be absolute path to render file hosted on CDN "../../src/html/r.html",
 			// "http://s3-us-west-2.amazonaws.com/safeframe/refimpl/1-0-3/html/r.html", 
-			renderFile:	"http://aaustin.github.io/safeframe-example.html", 
+			renderFile:	"https://aaustin.github.io/safeframe-example.html", 
 			onPosMsg: posMessageCallback,
 			positions: {}
 		});
@@ -112,12 +112,12 @@ function posMessageCallback(id, msgName, data){
 				//window.location = uri;	
 					//document.getElementById('z').click();
 					// alert("launching app");
-				setTimeout(function() {
+				//setTimeout(function() {
 				//	window.location = marketstore;
 				//	document.getElementById('x').src = marketstore;
 				//	document.getElementById('x').src = appstore;
-					alert("current URL is " + window.top.location);
-				}, 500);
+				
+				//}, 500);
 				//}, 150);
 
 				document.getElementById('a').onclick = function() {
