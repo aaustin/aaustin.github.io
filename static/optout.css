@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+.optout {
+  font-family: "Open Sans", Helvetica, Arial;
+  line-height: 1.5;
+}
+
+.optout h1 {
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.optout h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 20px 20px 20px 0;
+}
+
+.optout .intro, .optout h2, .optout .how-to-optout, .optout button {
+  margin: 20px;
+}
+
+.optout .header {
+  background-color: black;
+}
+
+.optout .header img {
+  margin-top: 5px;
+  margin-left: 45px;
+  max-height: 45px;
+}
+
+.optout button {
+  background-color: #4ab9ce;
+  color: #FFFFFF;
+  width: 150px;
+  height: 40px;
+  border: 0;
+}
+
+.optout .container {
+  text-align: left;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+  width: 650px;
+  padding: 60px 0 80px;
+  margin: 50px auto 30px;
+}
+.optout .success-message {
+  width: 100%;
+}
+.optout .success-message img {
+  width: 50px;
+  margin: auto;
+  display: block;
+}
+.optout .success-message .message {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.optout .success-message {
+  margin-top: 50px;
+  display: none;
+}

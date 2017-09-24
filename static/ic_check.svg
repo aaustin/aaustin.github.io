@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox-marked-circle-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CookiesPage-Copy" transform="translate(-620.000000, -196.000000)" fill-rule="nonzero" fill="#28B37F">
+            <g id="checkbox-marked-circle-outline" transform="translate(620.000000, 196.000000)">
+                <path d="M36,20 C36,28.836556 28.836556,36 20,36 C11.163444,36 4,28.836556 4,20 C4,11.163444 11.163444,4 20,4 C21.52,4 23,4.22 24.4,4.62 L27.54,1.48 C25.22,0.52 22.68,0 20,0 C8.954305,-4.4408921e-15 8.8817842e-16,8.954305 0,20 C-2.66453526e-15,25.3043298 2.10713681,30.3914081 5.85786438,34.1421356 C9.60859195,37.8928632 14.6956702,40 20,40 C25.3043298,40 30.3914081,37.8928632 34.1421356,34.1421356 C37.8928632,30.3914081 40,25.3043298 40,20 L36,20 Z M11.82,16.16 L9,19 L18,28 L38,8 L35.18,5.16 L18,22.34 L11.82,16.16 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
