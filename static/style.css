@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial;
+  font-weight: 100;
+  background-color: #f9fafd;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+  width: 650px;
+  text-align: center;
+  padding: 60px 0 80px;
+  margin: 50px auto 30px;
+}
+
+h1 {
+  color: #333;
+  font-weight: 100;
+  margin: 0;
+}
+
+.subtitle {
+  color: #999;
+  font-weight: 100;
+  font-size: 17px;
+  margin: 0;
+}
+
+h2 {
+  color: #333;
+  font-weight: 100;
+  margin: 0;
+  font-size: 22px;
+}
+
+input, button {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+#phone {
+  border: 1px solid #cecece;
+  text-align:center;
+  width: 240px;
+  height: 40px;
+  margin: 15px auto 5px auto;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.btn-submit {
+  border-radius: 2px;
+  display: block;
+  position: relative;
+  background: #0099cc;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  margin: auto;
+  outline: none;
+  padding-left: 10px;
+  transition-duration: .3s;
+  width: 240px;
+}
+
+.btn-submit:hover {
+  background: #00b4f0;
+}
+
+.btn-submit:disabled {
+  cursor: pointer;
+}
+
+.form-item {
+  margin-top: 50px;
+}
+
+.btn-submit-icon {
+  position: absolute;
+  display: inline-block;
+  top: 12px;
+  left: 10px;
+}
+
+.error-feedback {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  margin-top:10px;
+  color: #e37978;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 652px) {
+  body {
+    background: none;
+  }
+
+  .container {
+    box-shadow: none;
+    width: 100%;
+    padding: 80px 0 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
