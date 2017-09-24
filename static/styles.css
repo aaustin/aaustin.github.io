@@ -39,7 +39,7 @@ h1 {
   margin: 0;
 }
 
-.status {
+.status, a:link, a:visited {
   margin-top: 35px;
   text-decoration: none;
   font-weight: 200;
@@ -50,7 +50,7 @@ h1 {
 }
 
 .badge {
-  width: 100px;
+  width: 70px;
   margin: 25px
 }
 
