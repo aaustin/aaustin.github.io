@@ -95,9 +95,9 @@
 		
 					setTimeout(function() {
 					setTimeout(function() {
-						window.location = uri;
+						window.location = fallback_url;
 					}, 250);
-					window.location = fallback_url;
+					window.location = uri;
 					}, 250);
 					return false;
 				};
